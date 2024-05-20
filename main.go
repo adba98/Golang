@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"godesde0/variables"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	variables.ShowIntegers()
 }
