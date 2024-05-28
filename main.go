@@ -2,11 +2,24 @@ package main
 
 import (
 	"fmt"
-	"godesde0/variables"
+	"runtime"
 )
 
 func main() {
-	state, text := variables.CovertToText(111)
-	fmt.Println(state)
-	fmt.Println(text)
+	if os := runtime.GOOS; os == "windows" || os == "OS X." {
+		fmt.Println("Is Windows")
+	} else {
+		fmt.Println("Is", runtime.GOOS)
+	}
+
+	switch os := runtime.GOOS; os {
+
+	case "linux":
+		fmt.Println("You are using Linux.")
+	case "windows":
+		fmt.Println("You are using Windows.")
+	default:
+		fmt.Printf("%s is your operating system", runtime.GOOS)
+	}
+
 }
