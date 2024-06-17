@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"godesde0/exercises"
+	"godesde0/keyboard"
 )
 
 func main() {
-	number, text := exercises.ConvertNumber("101")
-	fmt.Println(number, text)
+	keyboard.InputNumbers()
 }
