@@ -1,9 +1,9 @@
 package main
 
 import (
-	"godesde0/keyboard"
+	"godesde0/variables"
 )
 
 func main() {
-	keyboard.InputNumbers()
+	variables.Iterate()
 }
