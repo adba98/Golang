@@ -1,9 +1,11 @@
 package main
 
 import (
-	"godesde0/exercises"
+	"godesde0/files"
 )
 
 func main() {
-	exercises.GenerateNumberBoard()
+	files.AddTable()
+	files.ReadFile()
+	files.ReadFile2()
 }

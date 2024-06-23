@@ -7,9 +7,10 @@ import (
 	"strconv"
 )
 
-func GenerateNumberBoard() {
+func GenerateNumberBoard() string {
 	var number int
 	var err error
+	var text string
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
 		fmt.Println("Enter number:")
@@ -22,6 +23,7 @@ func GenerateNumberBoard() {
 		}
 	}
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d\n", number, i, number*i)
+		text += fmt.Sprintf("%d x %d = %d\n", number, i, number*i)
 	}
+	return text
 }
