@@ -1,11 +1,10 @@
 package main
 
 import (
-	"godesde0/files"
+	"godesde0/functions"
 )
 
 func main() {
-	files.AddTable()
-	files.ReadFile()
-	files.ReadFile2()
+	// functions.Calculations()
+	functions.CallClosure()
 }
