@@ -1,9 +1,11 @@
 package main
 
 import (
-	"godesde0/functions"
+	"godesde0/arrays"
 )
 
 func main() {
-	functions.Exponential(2)
+	// arrays.ShowArrays()
+	// arrays.ShowSlices()
+	arrays.Capacity()
 }
