@@ -5,6 +5,5 @@ import (
 )
 
 func main() {
-	// functions.Calculations()
-	functions.CallClosure()
+	functions.Exponential(2)
 }
