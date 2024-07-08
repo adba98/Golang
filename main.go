@@ -1,11 +1,9 @@
 package main
 
 import (
-	"godesde0/arrays"
+	"godesde0/maps"
 )
 
 func main() {
-	// arrays.ShowArrays()
-	// arrays.ShowSlices()
-	arrays.Capacity()
+	maps.ShowMaps()
 }
