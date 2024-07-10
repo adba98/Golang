@@ -1,9 +1,9 @@
 package main
 
 import (
-	"godesde0/maps"
+	"godesde0/users"
 )
 
 func main() {
-	maps.ShowMaps()
+	users.CreateUser()
 }
