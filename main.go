@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	go goroutines.MySlowName("Oscar")
-	fmt.Println("Enter number:")
-	var x string
-	fmt.Scanln(&x)
-
+	chanel := make(chan bool)
+	go goroutines.MySlowName("Oscar", chanel)
+	<-chanel
+	fmt.Println("Here")
 }
