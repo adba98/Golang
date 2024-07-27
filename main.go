@@ -1,10 +1,14 @@
 package main
 
 import (
-	"godesde0/defer_panic"
+	"fmt"
+	"godesde0/goroutines"
 )
 
 func main() {
-	// defer_panic.Defer()
-	defer_panic.Panic()
+	go goroutines.MySlowName("Oscar")
+	fmt.Println("Enter number:")
+	var x string
+	fmt.Scanln(&x)
+
 }
