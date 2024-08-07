@@ -1,13 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"godesde0/goroutines"
+	"godesde0/webserver"
 )
 
 func main() {
-	chanel := make(chan bool)
-	go goroutines.MySlowName("Oscar", chanel)
-	<-chanel
-	fmt.Println("Here")
+	webserver.MyWebServer()
 }
