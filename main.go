@@ -1,9 +1,9 @@
 package main
 
 import (
-	"godesde0/webserver"
+	"godesde0/middleware"
 )
 
 func main() {
-	webserver.MyWebServer()
+	middleware.MyMiddleware()
 }
